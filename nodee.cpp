@@ -1,25 +1,56 @@
 #include "linkedlist.h"
-class node{
-    public:
-    int info;
-    node*next;
-    node(){}
-    node(int d):info(d),next( nullptr){}
-    node(int d,node*next):info (d),next(next){}
-    };
-class linkedlist{
-    private:
-    node HEAD;
-    node TAIL;
-    public:
-    linkedlist();
-    ~linkedlist();
-    void add(node *pred,int data);
-    void addtohead(int data);
-    void removefromtail(int data);
-    bool remove (int data);
-    bool removefromhead(int &data);
-    bool removefromtail(int &data);
-    bool isempty();
-    void head(int &data);
-};
+
+void linkedlist::addtohead(int data){
+   node* newNode = new node;
+newnode->data = newdata; 
+newnode->next = HEAD;  
+HEAD = newNode;   
+}
+
+void linkedlist::removefromtail(int data){
+    if(HEAD!=nullptr){
+        if (HEAD-> == nullptr){
+            delete HEAD;
+            HEAD==nullptr;
+            else
+              node* current = HEAD;
+        while (current->next->next != nullptr) {
+            current = current->next;  
+        delete current->next;  
+        current->next = nullptr;  
+    }
+
+
+
+    }
+ 
+}
+bool linkedlist::removefromhead(int &data){
+
+}
+bool linkedlist::removefromtail(int &data){
+
+}
+bool linkedlist::isempty(){
+    if(this->HEAD==nullptr && TAIL==nullptr )
+    
+
+
+}
+void linkedlist::head(int &data){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
