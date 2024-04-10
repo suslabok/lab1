@@ -7,4 +7,4 @@ class node{
     Node(int d):info(d),next(NULL)){}
     Node(int d,Node*next:info (d),next(NULL)){}
     };
-class LinkedList
+class LinkedList hhaha
