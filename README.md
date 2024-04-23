@@ -1,4 +1,4 @@
-**#Linked List Implementation in C++**
+**#Linked List Implementation in C++**<br>
 This project is for a simple implementation of a singly linked list in C++. It includes functions to add nodes to the head or tail of the list, remove nodes from the head or tail, check if the list is empty, and print the nodes in the list
 
 **#LinkedList Class**
