@@ -1,7 +1,7 @@
-#Linked List Implementation in C++__
+**#Linked List Implementation in C++**
 This project is for a simple implementation of a singly linked list in C++. It includes functions to add nodes to the head or tail of the list, remove nodes from the head or tail, check if the list is empty, and print the nodes in the list
 
-#LinkedList Class__
+**#LinkedList Class**
 The LinkedList class is a singly linked list implementation. Each node in the list contains an integer data value and a pointer to the next node. The LinkedList class maintains a pointer to the head node. for easy access.
 
 The class provides several functions for manipulating the list:__
@@ -11,12 +11,12 @@ The class provides several functions for manipulating the list:__
 -IsEmpty checks whether the list is empty.
 -print prints the data of all nodes in the list from head to tail.
 
-#Files included__
+**#Files included**
 -Main.cpp: This is the driver program that demonstrates the usage of the linked list.
 -Linkedlist.h: This header file contains the declaration of the Linkedlist and node class and their member functions.
 -Node.cpp: This file contains the implementation of the LinkedList class and its member functions.
  
-#Functions used and their fucntionalities:__
+**#Functions used and their fucntionalities:**
 -addToHead(int data):Adds a new node with the data to beginning of list
 -add To Tail(int data): Adds a new node with the data to beginning of list
 -removeFromHead(int &data):Removes the node at the beginning of list
@@ -24,5 +24,5 @@ The class provides several functions for manipulating the list:__
 -isEmpty():Returns true if the list is empty
 -print():Prints out the nodes in the list
 
-#To compile the program__
+**#To compile the program**
 g++ Main.cpp Node.cpp
