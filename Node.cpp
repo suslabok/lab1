@@ -1,4 +1,4 @@
-#include "linkedlist.h"
+#include "Linkedlist.h"
 #include <iostream>
 using namespace std;
 
@@ -68,6 +68,7 @@ void LinkedList::removeFromTail()//removing info from tail
         }
     } else {
         cout << "Empty" << endl;
+
     }
 }
 

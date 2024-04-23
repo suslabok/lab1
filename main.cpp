@@ -1,5 +1,5 @@
 #include <iostream>
-#include "linkedlist.h"
+#include "Linkedlist.h"
 using namespace std;
 
 int main(){
@@ -22,6 +22,4 @@ int main(){
     } else {
         cout << "Data not found" << endl;
     }
-
-
 }
