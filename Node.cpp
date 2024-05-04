@@ -2,6 +2,15 @@
 #include <iostream>
 using namespace std;
 
+void LinkedList::traverse()// displays the data of the node in the list
+ {
+    Node *newNode = HEAD;
+    while (newNode != nullptr)// Traversing until the newNode points to the last node
+     {
+        cout << newNode->info << endl;//Printing the required info of the node
+        newNode = newNode->next;
+    }
+}
 void LinkedList::printlist()// displays the data of the node in the list
  {
     Node *newNode = HEAD;
@@ -128,3 +137,18 @@ bool LinkedList::retrieve(int data, Node** outputPtr) {
     return (p != nullptr);
 }
 
+void LinkedList::addAfter(int existingInfo, int newInfo) {
+    Node* newNode = new Node(newInfo); // Create a new node with the new information
+    Node* p; // Pointer to traverse the list to find the node with existingInfo
+
+    if (retrieve(existingInfo, &p)) { // Find the node with existingInfo
+        newNode->next = p->next; // Set the next pointer of newNode to point to the next node of p
+        p->next = newNode; // Set the next pointer of p to point to newNode
+        if (p == TAIL) {
+            TAIL = newNode; // Update TAIL if the new node is inserted after the last node
+        }
+    } else {
+        cout << "Node with existing info not found" << endl;
+        delete newNode; // If the node with existingInfo is not found, delete the newly created node
+    }
+}

@@ -31,4 +31,5 @@ class LinkedList{
         void remove(int);
         void search(int);
         bool retrieve(int, Node **);
+        void addAfter(int existingInfo, int newInfo);      
 };
